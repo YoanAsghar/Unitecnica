@@ -1,0 +1,23 @@
+CREATE DATABASE shops;
+use shops;
+
+CREATE TABLE clients(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    client_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    phone int NOT NULL UNIQUE
+);
+
+CREATE TABLE PRODUCTOS(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(30) UNIQUE NOT NULL,
+    price INT NOT NULL,
+    stock INT NOT NULL DEFAULT 0 
+);
+
+CREATE TABLE SELLS(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sell_date DATE NOT NULL,
+    total INT NOT NULL
+);
+
