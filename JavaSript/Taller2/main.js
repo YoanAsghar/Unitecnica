@@ -1,4 +1,4 @@
-const prompt = require("prompt-sync");
+const prompt = require("prompt-sync")();
 
 // Parte 1 – Declaración de variables (40 minutos)
 // 1. Declara una variable con tu nombre
@@ -47,8 +47,8 @@ console.log(typeof(myNull));
 // 4. Muestra un mensaje como:
 // "El total a pagar es: $___"
 
-let amountOfProduct = prompt(`Cuantos productos vas a comprar? Cada uno cuesta ${priceOfProduct}`);
 let priceOfProduct = 20;
+let amountOfProduct = prompt(`Cuantos productos vas a comprar? Cada uno cuesta ${priceOfProduct}`);
 
 console.log(`El total a pagar es : ${amountOfProduct * priceOfProduct}`);
 
