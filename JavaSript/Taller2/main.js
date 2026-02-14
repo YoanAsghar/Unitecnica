@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync");
+
 // Parte 1 – Declaración de variables (40 minutos)
 // 1. Declara una variable con tu nombre
 // 2. Declara una variable con tu edad
@@ -5,9 +7,9 @@
 // 4. Imprime todas en consola
 
 
-let myName = "Joan Santiago Velasquez Arias";
-let myAge = 21;
-const myCountry = "Colombia";
+let myName = prompt("Cual es tu nombre?");
+let myAge = prompt("Cual es tu edad?");
+const myCountry = prompt("De que pais eres");
 
 console.log(`Mi nombre es ${myName}, tengo ${myAge} años y naci en ${myCountry}`);
 
@@ -45,7 +47,7 @@ console.log(typeof(myNull));
 // 4. Muestra un mensaje como:
 // "El total a pagar es: $___"
 
-let amountOfProduct = 4;
+let amountOfProduct = prompt(`Cuantos productos vas a comprar? Cada uno cuesta ${priceOfProduct}`);
 let priceOfProduct = 20;
 
 console.log(`El total a pagar es : ${amountOfProduct * priceOfProduct}`);
@@ -74,9 +76,9 @@ console.log(`Mi nombre es ${myObject.objectName}, tengo ${myObject.objectAge} y 
 // Calcula el promedio e imprime:
 // "El estudiante ___ tiene promedio ___"
 
-let nota1 = 3.7;
-let nota2 = 2.5;
-let nota3 = 5;
+let nota1 = prompt("Cuanto sacaste en la primera nota?");
+let nota2 = prompt("Cuanto sacaste en la segunda nota?");
+let nota3 = prompt("Cuanto sacaste en la tercera nota?");
 
 let notaFinal = (nota1 + nota2 + nota3) / 3;
 console.log(notaFinal);
