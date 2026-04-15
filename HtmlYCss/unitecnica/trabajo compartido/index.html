@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Grupal - IA Web</title>
+    <style>
+        /* CSS BASE PARA ESTRUCTURA */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
+        .hidden { display: none !important; }
+        
+        /* Estilo para el Overlay de Login */
+        #login-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); color: white; display: flex;
+            justify-content: center; align-items: center; z-index: 1000;
+        }
+
+        /* Contenedor Principal */
+        #main-content { padding: 20px; }
+        .section { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-height: 400px; }
+        
+        /* Placeholder styling */
+        .placeholder-box { border: 2px dashed #ccc; padding: 20px; text-align: center; color: #888; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        ==========================================================================
+        GUÍA PARA EL EQUIPO DE DESARROLLO (7 PERSONAS)
+        ==========================================================================
+        Instrucciones:
+        1. Cada persona tiene un DIV asignado con un ID único.
+        2. No modifiques el JS de navegación a menos que sea necesario.
+        3. Pon todo tu HTML/CSS/JS dentro de tu sección designada.
+        4. Usa clases de CSS únicas o prefijos (ej: .login-button) para evitar conflictos.
+        
+        ASIGNACIONES:
+        - Persona 1 (Yoan): Navbar (Ya iniciado abajo)
+        - Persona 2: (Mariana)Menú de Login (#section-login)
+        - Persona 3: (Valeria)Elementos en Venta (#section-marketplace)
+        - Persona 4: (Mario)Gestión de Usuarios (#section-users)
+        - Persona 5: (Alejandra)Dashboard de Estadísticas (#section-dashboard)
+        - Persona 6: (Yilamar)Panel de Administrador (#section-admin)
+        - Persona 7: (Samuel)Carrito y Pedidos (#section-cart)
+        ==========================================================================
+    -->
+
+    <!-- COMPONENTE 2: LOGIN OVERLAY (Persona 2) -->
+    <div id="login-overlay">
+        <div id="section-login" class="section" style="color: black; text-align: center;">
+            <h2>MÓDULO DE ACCESO</h2>
+            <p>Este componente debe bloquear la página hasta que se ingresen credenciales.</p>
+            <!-- AQUÍ VA EL CÓDIGO DE LA PERSONA 2 -->
+            <div class="placeholder-box">
+                <input type="text" placeholder="Usuario (Cualquiera)">
+                <input type="password" placeholder="Contraseña">
+                <button onclick="login()">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL (Oculto hasta el Login) -->
+    <div id="main-app" class="hidden">
+        
+        <!-- COMPONENTE 1: NAVBAR (Persona 1 - YOAN) -->
+        <nav style="background: #333; color: white; padding: 1rem; display: flex; gap: 20px;">
+            <strong style="margin-right: auto;">IA-STORE TECH</strong>
+            <a href="#" onclick="showSection('section-marketplace')" style="color: white; text-decoration: none;">Tienda</a>
+            <a href="#" onclick="showSection('section-users')" style="color: white; text-decoration: none;">Usuarios</a>
+            <a href="#" onclick="showSection('section-dashboard')" style="color: white; text-decoration: none;">Dashboard</a>
+            <a href="#" onclick="showSection('section-admin')" style="color: white; text-decoration: none;">Admin</a>
+            <a href="#" onclick="showSection('section-cart')" style="color: white; text-decoration: none;">Carrito (0)</a>
+            <button onclick="location.reload()" style="background: #ff4444; border: none; color: white; cursor: pointer;">Salir</button>
+        </nav>
+
+        <main id="main-content">
+
+            <!-- COMPONENTE 3: ELEMENTOS EN VENTA (Persona 3) -->
+            <div id="section-marketplace" class="section">
+                <h1>Catálogo de Productos</h1>
+                <p>Bienvenido a la tienda de IA. Aquí verás los elementos disponibles.</p>
+                <div class="placeholder-box">
+                    <!-- AQUÍ LA PERSONA 3 PONE SUS CARDS DE PRODUCTOS -->
+                    [Espacio para Catálogo de Productos]
+                </div>
+            </div>
+
+            <!-- COMPONENTE 4: APARTADO PARA USUARIOS (Persona 4) -->
+            <div id="section-users" class="section hidden">
+                <h1>Gestión de Usuarios</h1>
+                <p>Listado y perfiles de los usuarios registrados en el sistema.</p>
+                <div class="placeholder-box">
+                    <!-- AQUÍ LA PERSONA 4 PONE SU TABLA O LISTA DE USUARIOS -->
+                    [Espacio para Lista de Usuarios]
+                </div>
+            </div>
+
+            <!-- COMPONENTE 5: DASHBOARD (Persona 5) -->
+            <div id="section-dashboard" class="section hidden">
+                <h1>Panel de Estadísticas</h1>
+                <p>Visualización de datos, métricas y gráficos de rendimiento.</p>
+                <div class="placeholder-box">
+                    <!-- AQUÍ LA PERSONA 5 PONE SUS GRÁFICOS O KPI's -->
+                    [Espacio para Gráficos y Métricas]
+                </div>
+            </div>
+
+            <!-- COMPONENTE 6: PANEL ADMIN (Persona 6) -->
+            <div id="section-admin" class="section hidden">
+                <h1>Administración Central</h1>
+                <p>Controles críticos: Agregar, Editar y Eliminar elementos del sistema.</p>
+                <div class="placeholder-box">
+                    <!-- AQUÍ LA PERSONA 6 PONE LOS BOTONES DE ACCIÓN -->
+                    <button style="background: green; color: white;">+ Agregar Nuevo</button>
+                    <button style="background: red; color: white;">x Eliminar Seleccionado</button>
+                </div>
+            </div>
+
+            <!-- COMPONENTE 7: CARRITO Y PEDIDOS (Persona 7) -->
+            <div id="section-cart" class="section hidden">
+                <h1>Mi Carrito y Pedidos</h1>
+                <p>Resumen de compras seleccionadas y estado de órdenes anteriores.</p>
+                <div class="placeholder-box">
+                    <!-- AQUÍ LA PERSONA 7 PONE EL RESUMEN DE COMPRA -->
+                    [Espacio para Items Seleccionados y Botón de Pago]
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- LÓGICA DE NAVEGACIÓN (Único JS permitido) -->
+    <script>
+        // Función para cambiar entre secciones
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(s => {
+                if(s.id !== 'section-login') { // No ocultamos el login overlay aquí
+                    s.classList.add('hidden');
+                }
+            });
+            
+            // Mostrar la seleccionada
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Función simple de login para demostración
+        function login() {
+            document.getElementById('login-overlay').classList.add('hidden');
+            document.getElementById('main-app').classList.remove('hidden');
+            showSection('section-marketplace'); // Mostrar tienda por defecto al entrar
+        }
+    </script>
+
+</body>
+</html>
