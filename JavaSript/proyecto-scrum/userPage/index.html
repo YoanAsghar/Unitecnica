@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Scriptorium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-page">
+        <div class="profile-card">
+            <aside class="profile-sidebar">
+                <div class="profile-sidebar-brand">
+                    <h2>Mi Cuenta</h2>
+                </div>
+                <nav class="profile-nav">
+                    <button class="nav-item active" data-section="infoSection">Información</button>
+                    <button class="nav-item" data-section="articlesSection">Mis Artículos</button>
+                    <button class="nav-item" data-section="settingsSection">Configuración</button>
+                </nav>
+                <div class="profile-sidebar-footer">
+                    <button class="profile-action logout-button">Cerrar Sesión</button>
+                    <button class="profile-action delete-button">Eliminar Cuenta</button>
+                </div>
+            </aside>
+
+            <main class="profile-content">
+                <section id="infoSection" class="profile-section">
+                    <div class="profile-summary">
+                        <div class="profile-summary-header">
+                            <div>
+                                <h1>Hola, Juan Pérez</h1>
+                                <p class="profile-role">Estudiante · Área: Ciencias Sociales</p>
+                            </div>
+                            <div class="profile-badge">Activo</div>
+                        </div>
+                        <div class="profile-details-grid">
+                            <div class="profile-detail-card">
+                                <span class="detail-label">Correo</span>
+                                <p>juan.perez@email.com</p>
+                            </div>
+                            <div class="profile-detail-card">
+                                <span class="detail-label">Miembro desde</span>
+                                <p>20 de marzo, 2026</p>
+                            </div>
+                            <div class="profile-detail-card">
+                                <span class="detail-label">Artículos creados</span>
+                                <p>8</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="articlesSection" class="profile-section hidden">
+                    <div class="articles-section">
+                        <div class="section-header">
+                            <h2>Artículos creados por mí</h2>
+                            <div class="section-actions">
+                                <span class="section-meta">8 artículos publicados</span>
+                                <button class="create-article-button">Crear Artículo</button>
+                            </div>
+                        </div>
+                        <div class="article-list">
+                            <article class="article-item">
+                                <div class="article-item-header">
+                                    <h3>Cómo escribir un ensayo académico</h3>
+                                    <button class="article-edit-button">Editar</button>
+                                </div>
+                                <span class="item-category">Literatura</span>
+                                <p>Guía práctica para estructurar un ensayo con claridad, fuentes y estilo riguroso.</p>
+                            </article>
+                            <article class="article-item">
+                                <div class="article-item-header">
+                                    <h3>Estrategias de estudio efectivas</h3>
+                                    <button class="article-edit-button">Editar</button>
+                                </div>
+                                <span class="item-category">Educación</span>
+                                <p>Métodos organizados para maximizar el tiempo de estudio y mejorar la retención.</p>
+                            </article>
+                            <article class="article-item">
+                                <div class="article-item-header">
+                                    <h3>Introducción a la lógica matemática</h3>
+                                    <button class="article-edit-button">Editar</button>
+                                </div>
+                                <span class="item-category">Matemáticas</span>
+                                <p>Conceptos básicos de proposiciones, razonamiento y pruebas.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="settingsSection" class="profile-section hidden">
+                    <div class="settings-section">
+                        <div class="section-header">
+                            <h2>Configuración</h2>
+                        </div>
+                        <div class="settings-grid">
+                            <div class="setting-card">
+                                <h3>Actualizar perfil</h3>
+                                <p>Cambia tu nombre, correo y biografía personal.</p>
+                            </div>
+                            <div class="setting-card">
+                                <h3>Privacidad</h3>
+                                <p>Gestiona quién puede ver tus artículos y tu información pública.</p>
+                            </div>
+                            <div class="setting-card">
+                                <h3>Notificaciones</h3>
+                                <p>Activa o desactiva avisos sobre nuevos comentarios y actividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

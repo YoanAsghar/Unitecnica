@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Artículo - Scriptorium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="create-article-page">
+        <div class="create-article-card">
+            <header class="create-article-header">
+                <div>
+                    <p class="breadcrumbs">Perfil / Artículos / Crear artículo</p>
+                    <h1>Crear nuevo artículo</h1>
+                    <p class="subtitle">Completa los campos para publicar tu artículo educativo.</p>
+                </div>
+            </header>
+
+            <form class="create-article-form" id="createArticleForm">
+                <div class="form-group">
+                    <label for="articleTitle">Título del artículo</label>
+                    <input type="text" id="articleTitle" name="articleTitle" placeholder="Escribe un título claro y académico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="articleCategory">Categoría</label>
+                    <select id="articleCategory" name="articleCategory" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Programación">Programación</option>
+                        <option value="Matemáticas">Matemáticas</option>
+                        <option value="Ciencias">Ciencias</option>
+                        <option value="Historia">Historia</option>
+                        <option value="Literatura">Literatura</option>
+                        <option value="Artes">Artes</option>
+                        <option value="Tecnología">Tecnología</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="articleExcerpt">Extracto breve</label>
+                    <input type="text" id="articleExcerpt" name="articleExcerpt" placeholder="Resumen corto para previsualización" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="articleBody">Contenido del artículo</label>
+                    <textarea id="articleBody" name="articleBody" placeholder="Escribe aquí el contenido del artículo..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button-primary">Guardar artículo</button>
+                    <button type="reset" class="button-secondary">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

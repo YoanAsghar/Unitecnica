@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriptorium - Plataforma de Artículos Educativos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+        <!-- Sidebar Izquierdo -->
+        <aside class="sidebar">
+            <div class="page-title-row">
+                <h1 class="page-heading">Scriptorium</h1>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Buscar</h3>
+                <input type="text" class="search-input" placeholder="Buscar artículos...">
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Filtrar</h3>
+                <label class="filter-label" for="filterDate">Fecha de publicación</label>
+                <input type="date" id="filterDate" class="search-input">
+                <label class="filter-label" for="filterAuthor">Autor</label>
+                <input type="text" id="filterAuthor" class="search-input" placeholder="Filtrar por autor">
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Categorías</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="category-link">Programación</a></li>
+                    <li><a href="#" class="category-link">Matemáticas</a></li>
+                    <li><a href="#" class="category-link">Ciencias</a></li>
+                    <li><a href="#" class="category-link">Historia</a></li>
+                    <li><a href="#" class="category-link">Literatura</a></li>
+                    <li><a href="#" class="category-link">Artes</a></li>
+                    <li><a href="#" class="category-link">Tecnología</a></li>
+                    <li><a href="#" class="category-link">Otros</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="content">
+            <!-- Placeholder de Artículo -->
+            <article class="article-placeholder">
+                <div class="article-header">
+                    <div class="header-top">
+                        <h1 class="article-title">Selecciona un artículo</h1>
+                        <button class="profile-icon" title="Perfil">👤</button>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <ul class="articles-list">
+                        <li class="article-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Introducción a JavaScript: Conceptos Fundamentales</h3>
+                                <span class="card-category">Programación</span>
+                            </div>
+                            <p class="card-preview">JavaScript es un lenguaje de programación que originalmente fue
+                                diseñado para ejecutarse en navegadores web. A lo largo de los años, se ha convertido en
+                                uno de los lenguajes más versátiles...</p>
+                            <div class="card-footer">
+                                <span class="card-author">María González</span>
+                                <span class="card-date">15 de enero, 2025</span>
+                            </div>
+                        </li>
+                        <li class="article-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Cálculo Diferencial: Derivadas e Integrales</h3>
+                                <span class="card-category">Matemáticas</span>
+                            </div>
+                            <p class="card-preview">El cálculo diferencial es una rama fundamental de las matemáticas
+                                que estudia el cambio y la variación. Es esencial para entender conceptos avanzados en
+                                física e ingeniería...</p>
+                            <div class="card-footer">
+                                <span class="card-author">Juan Rodríguez</span>
+                                <span class="card-date">12 de enero, 2025</span>
+                            </div>
+                        </li>
+                        <li class="article-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Historia de la Revolución Francesa</h3>
+                                <span class="card-category">Historia</span>
+                            </div>
+                            <p class="card-preview">La Revolución Francesa fue un período de transformación social,
+                                política y cultural que cambió el curso de la historia europea. Sus efectos se sintieron
+                                en todo el mundo...</p>
+                            <div class="card-footer">
+                                <span class="card-author">Ana Martínez</span>
+                                <span class="card-date">10 de enero, 2025</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

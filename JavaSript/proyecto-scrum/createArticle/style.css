@@ -1,0 +1,170 @@
+/* ========== VARIABLES GLOBALES ========== */
+:root {
+    --primary-color: #f8f9fa;
+    --secondary-color: #ffffff;
+    --text-dark: #202122;
+    --text-light: #6a737d;
+    --border-color: #d3d3d3;
+    --accent-color: #0645ad;
+    --accent-hover: #0b1ba8;
+    --font-family: 'Georgia', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+.create-article-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.create-article-card {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.create-article-header {
+    padding: 30px 35px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumbs {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.create-article-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.create-article-form {
+    padding: 25px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(6, 69, 173, 0.08);
+}
+
+.form-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.form-group textarea {
+    min-height: 320px;
+    max-height: 420px;
+    resize: vertical;
+    overflow: auto;
+    line-height: 1.7;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.button-primary,
+.button-secondary {
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.button-primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+.button-secondary:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 780px) {
+    .create-article-card {
+        border-radius: 8px;
+    }
+
+    .create-article-header,
+    .create-article-form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

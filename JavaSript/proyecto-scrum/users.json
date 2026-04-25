@@ -1,0 +1,52 @@
+[
+  {
+    "id": "user_20260424_1",
+    "email": "sofia.martinez@example.com",
+    "nombre": "Sofía Martínez",
+    "contraseña": "password123",
+    "fotoPerfil": "https://example.com/fotos/sofia.jpg",
+    "biografia": "Estudiante de psicología interesada en neurociencia y técnicas de estudio.",
+    "fechaCreacion": "2026-04-10",
+    "articulosIds": ["article_20260424_1"]
+  },
+  {
+    "id": "user_20260424_2",
+    "email": "carlos.lopez@example.com",
+    "nombre": "Carlos López",
+    "contraseña": "password123",
+    "fotoPerfil": "https://example.com/fotos/carlos.jpg",
+    "biografia": "Profesor de historia con pasión por la investigación social.",
+    "fechaCreacion": "2026-03-18",
+    "articulosIds": ["article_20260424_2"]
+  },
+  {
+    "id": "user_20260424_3",
+    "email": "lucia.gomez@example.com",
+    "nombre": "Lucía Gómez",
+    "contraseña": "password123",
+    "fotoPerfil": "https://example.com/fotos/lucia.jpg",
+    "biografia": "Desarrolladora web y creadora de contenidos educativos.",
+    "fechaCreacion": "2026-02-25",
+    "articulosIds": ["article_20260424_3"]
+  },
+  {
+    "id": "user_20260424_4",
+    "email": "diego.perez@example.com",
+    "nombre": "Diego Pérez",
+    "contraseña": "password123",
+    "fotoPerfil": "https://example.com/fotos/diego.jpg",
+    "biografia": "Estudiante de ingeniería ambiental y divulgador de ciencias.",
+    "fechaCreacion": "2026-01-12",
+    "articulosIds": ["article_20260424_4"]
+  },
+  {
+    "id": "user_20260424_5",
+    "email": "maria.rodriguez@example.com",
+    "nombre": "María Rodríguez",
+    "contraseña": "password123",
+    "fotoPerfil": "https://example.com/fotos/maria.jpg",
+    "biografia": "Profesora de literatura y amante de la lectura crítica.",
+    "fechaCreacion": "2026-04-01",
+    "articulosIds": ["article_20260424_5"]
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "article_20260424_1",
+    "titulo": "Técnicas eficaces para mejorar la memoria",
+    "categoria": "Psicología",
+    "contenido": "Las mejores técnicas para reforzar la memoria incluyen la repetición espaciada, la elaboración de mapas mentales y el uso de mnemotécnias.",
+    "autorId": "user_20260424_1",
+    "fechaCreacion": "2026-04-11",
+    "fechaActualizacion": "2026-04-11",
+    "versiones": [
+      {
+        "numeroVersion": 1,
+        "contenido": "Las mejores técnicas para reforzar la memoria incluyen la repetición espaciada, la elaboración de mapas mentales y el uso de mnemotécnias.",
+        "fecha": "2026-04-11",
+        "cambios": "Artículo inicial"
+      }
+    ],
+    "lecturas": 32,
+    "estado": "publicado"
+  },
+  {
+    "id": "article_20260424_2",
+    "titulo": "La Revolución Industrial y su impacto en la sociedad",
+    "categoria": "Historia",
+    "contenido": "La Revolución Industrial transformó la economía, el trabajo y la ciudad moderna al introducir fábricas y nuevas fuentes de energía.",
+    "autorId": "user_20260424_2",
+    "fechaCreacion": "2026-03-20",
+    "fechaActualizacion": "2026-03-22",
+    "versiones": [
+      {
+        "numeroVersion": 1,
+        "contenido": "La Revolución Industrial transformó la economía, el trabajo y la ciudad moderna al introducir fábricas y nuevas fuentes de energía.",
+        "fecha": "2026-03-20",
+        "cambios": "Artículo inicial"
+      },
+      {
+        "numeroVersion": 2,
+        "contenido": "Se agregaron ejemplos de la primera máquina de vapor y el impacto social en las clases trabajadoras.",
+        "fecha": "2026-03-22",
+        "cambios": "Ampliación de contenido"
+      }
+    ],
+    "lecturas": 45,
+    "estado": "publicado"
+  },
+  {
+    "id": "article_20260424_3",
+    "titulo": "Primeros pasos en desarrollo web con HTML y CSS",
+    "categoria": "Programación",
+    "contenido": "HTML define la estructura de la página y CSS permite darle estilo. Juntos crean la base de cualquier sitio web moderno.",
+    "autorId": "user_20260424_3",
+    "fechaCreacion": "2026-02-28",
+    "fechaActualizacion": "2026-02-28",
+    "versiones": [
+      {
+        "numeroVersion": 1,
+        "contenido": "HTML define la estructura de la página y CSS permite darle estilo. Juntos crean la base de cualquier sitio web moderno.",
+        "fecha": "2026-02-28",
+        "cambios": "Artículo inicial"
+      }
+    ],
+    "lecturas": 58,
+    "estado": "publicado"
+  },
+  {
+    "id": "article_20260424_4",
+    "titulo": "Cambio climático: causas y acciones para el futuro",
+    "categoria": "Ciencias",
+    "contenido": "El cambio climático es impulsado por las emisiones de gases de efecto invernadero. Las acciones individuales y colectivas pueden reducir su avance.",
+    "autorId": "user_20260424_4",
+    "fechaCreacion": "2026-01-15",
+    "fechaActualizacion": "2026-01-15",
+    "versiones": [
+      {
+        "numeroVersion": 1,
+        "contenido": "El cambio climático es impulsado por las emisiones de gases de efecto invernadero. Las acciones individuales y colectivas pueden reducir su avance.",
+        "fecha": "2026-01-15",
+        "cambios": "Artículo inicial"
+      }
+    ],
+    "lecturas": 25,
+    "estado": "publicado"
+  },
+  {
+    "id": "article_20260424_5",
+    "titulo": "Análisis de un poema clásico: símbolos y significado",
+    "categoria": "Literatura",
+    "contenido": "El análisis literario revela los símbolos y las imágenes que el autor usa para expresar sentimientos y temas universales.",
+    "autorId": "user_20260424_5",
+    "fechaCreacion": "2026-04-02",
+    "fechaActualizacion": "2026-04-02",
+    "versiones": [
+      {
+        "numeroVersion": 1,
+        "contenido": "El análisis literario revela los símbolos y las imágenes que el autor usa para expresar sentimientos y temas universales.",
+        "fecha": "2026-04-02",
+        "cambios": "Artículo inicial"
+      }
+    ],
+    "lecturas": 18,
+    "estado": "publicado"
+  }
+]
